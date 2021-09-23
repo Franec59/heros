@@ -1,0 +1,87 @@
+import React from 'react';
+import logo from '../Images/logo2.png';
+import Navigation from "../components/Navigation";
+
+const Home = () => {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>Les dossiers secrets du S.H.I.E.L.D</h1>
+          <img src={logo} className="App-logo" alt="logo" />
+          <Navigation />
+        </header>
+
+        <div className="shield">
+          <h3>Le S.H.I.E.L.D *</h3>
+          <p className="shield-def">
+            (typographié S.H.I.E.L.D. en VO),
+            acronyme de{" "}
+            <strong>
+              « Strategic Homeland Intervention Enforcement Logistics Division »
+            </strong>{" "}
+            est une agence de renseignement, d'intervention et de
+            contre-terrorisme de fiction appartenant à l'univers Marvel de la
+            maison d'édition Marvel Comics.
+            <br />
+            Créée par le scénariste Stan Lee et le dessinateur Jack Kirby, elle
+            apparaît pour la première fois dans le comic book Strange Tales #135
+            en août 1965.
+            <br />
+            Dirigé par Nick Fury (personnage créé en 1963), un vétéran de la
+            Seconde Guerre mondiale et super-espion borgne, celui-ci en est le
+            directeur historique même si le commandement a été assuré pendant
+            quelque temps par G. W. Bridge. À la suite de sa guerre secrète
+            contre la Latvérie, Fury disparaît de la circulation.
+            <br />
+            L'organisation est ensuite dirigée par Maria Hill jusqu'aux
+            événements de Civil War. Tony Stark lui succède jusqu'à la
+            dissolution de l'agence après les événements de Secret Invasion.
+          </p>
+          <p className="shield-def">
+            <a href="https://fr.wikipedia.org/wiki/SHIELD" className="source">
+              *source Wikipédia
+            </a>
+          </p>
+          <h2>Fonctionnement du site</h2>
+          <p className="shield-def">
+            Ce site utilise le S.H.I.E.L.D comme prétexte pour faire appel à une
+            API de super-héro et autres personnages de fiction.
+            <br />
+            L'idée étant étant de faire comme si le Shield avait des dossiers
+            sur tous ces héros, bons ou méchants, venant de chez Marvel, DC
+            comics ou d'ailleurs !
+          </p>
+
+          <p className="shield-def">
+            Vous pouvez avoir un aperçu de tous ces personnages sur la page
+            "Galerie" et également consulter leur dossier nominatif sur la page
+            "Rechercher".
+          </p>
+
+          <p className="shield-def">
+            Cette API public est uniquement en anglais et il vous faudra entrer
+            les noms des personnages que vous rechercher en VO.
+            <br />
+            ex: <em>Captain America</em> et non Capitaine America,{" "}
+            <em>Spider-man</em> et non Spiderman, <em>Darth Vader</em> et non
+            Dark Vador !
+            <br />
+            <br />
+            Outre les "super-heros", vous y trouver d'autres "héros" tel James
+            Bond, Indiana Jones ou même Chuck Norris !!
+            <br />
+            <br />
+            Sur la page rechercher, vous pouvez juste saisir "captain" ou
+            "green" par exemple et voir le résultat !
+          </p>
+          <p className="shield-def">
+            <a href="https://superheroapi.com/ids.html" className="source">
+              Voir la liste compléte des personnages
+            </a>
+          </p>
+        </div>
+      </div>
+    );
+};
+
+export default Home;
