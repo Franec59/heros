@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Les dossiers secrets du SHIELD
+
+Mon 1er Projet avec React !
+
+Installation
+1. Créer un dossier vide sur votre machine pour accueillir le projet
+2. Cloner le projet depuis github : https://github.com/Franec59/heros.git
+3. installer les nodes_modules : npm install
+4. Taper npm start dans la console pour démarer le projet : localhost 3000
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

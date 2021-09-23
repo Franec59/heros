@@ -68,7 +68,7 @@ const Wanted = () => {
           <ul className="dossier-ul">           
               {hero.map((dossier) => (
                 <li className="dossier-li" key={dossier.id}>
-                <div className="affiche">
+                <div className="affiche" id={dossier.id}>
                   <div className="aff-header">
                     <div className="police-logo"></div>
                     <div className="police-dept">
@@ -193,7 +193,7 @@ const Wanted = () => {
                     <h2 className="yes-file">--- {hero.length} dossiers archivés ---</h2>
                     <ul className="file-ul">
                         {hero.map((el) =>(
-                            <li className="file-li" key={el.id}><div className="file"><img src={el.image.url} className="file-img"/></div>{el.name}</li>
+                            <li className="file-li" key={el.id}><div className="file"><a href={el.id}><img src={el.image.url} className="file-img"/></a></div>{el.name}</li>
                         ))}
                     </ul>
                 </div>

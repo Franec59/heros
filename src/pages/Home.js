@@ -72,7 +72,7 @@ const Home = () => {
             <br />
             <br />
             Sur la page rechercher, vous pouvez juste saisir "captain" ou
-            "green" par exemple et voir le résultat !
+            "green" par exemple ou simplement une lettre et voir le résultat !
           </p>
           <p className="shield-def">
             <a href="https://superheroapi.com/ids.html" className="source">
