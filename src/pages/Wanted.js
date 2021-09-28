@@ -6,6 +6,8 @@ import { useForm } from "react-hook-form";
 import "../style/wanted.css";
 import { AiFillFolderOpen } from "react-icons/ai";
 import { Clock } from '../components/Clock';
+import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 
 const Wanted = () => {
 
@@ -70,7 +72,7 @@ const Wanted = () => {
                 <li className="dossier-li" key={dossier.id}>
                 <div className="affiche" id={dossier.id}>
                   <div className="aff-header">
-                    <div className="police-logo"></div>
+                    <div className="police-logo" id="123"></div>
                     <div className="police-dept">
                       <h2 className="police-dept-title">Police Departement</h2>
                       <h2 className="police-dept-case">
@@ -166,6 +168,7 @@ const Wanted = () => {
                         </tbody>
                         </table>
                       </div>
+                      <HashLink to="#top"><button className="btn-top">Top of Page</button></HashLink>
                     </div>
                   </div>
                   <div className="black-footer">
@@ -193,7 +196,11 @@ const Wanted = () => {
                     <h2 className="yes-file">--- {hero.length} dossiers archivés ---</h2>
                     <ul className="file-ul">
                         {hero.map((el) =>(
-                            <li className="file-li" key={el.id}><div className="file"><a href={el.id}><img src={el.image.url} className="file-img"/></a></div>{el.name}</li>
+                            <li className="file-li" key={el.id}><div className="file">
+                              <Link to={`/wanted#${el.id}`}>
+                              <img src={el.image.url} className="file-img"/></Link>
+                              </div>{el.name}
+                              </li>
                         ))}
                     </ul>
                 </div>
@@ -204,7 +211,12 @@ const Wanted = () => {
                         <h2 className="yes-file">--- {hero.length} dossier archivé ---</h2>
                         <ul className="file-ul">
                             {hero.map((el) =>(
-                                <li className="file-li" key={el.id}><div className="file"><img src={el.image.url} className="file-img"/></div>{el.name}</li>
+                                <li className="file-li" key={el.id}><div className="file">
+                                  
+                                  <img src={el.image.url} className="file-img"/></div>{el.name}
+                                 
+                                </li>
+                                  
                             ))}
                         </ul>
                     </div>
@@ -231,7 +243,7 @@ const Wanted = () => {
             <div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="form">
-                        <label htmlFor="rechercher">Entrez le nom du personnage recherché</label>
+                        <label htmlFor="rechercher">Entrez le nom du personnage recherché ou juste une lettre ...</label>
                         <input type="text" id="rechercher" name="rechercher" placeholder="nom ..." {...register("nom", { required: true })}/>
                     </div>
                     <div>

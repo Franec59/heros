@@ -1,6 +1,7 @@
 # Les dossiers secrets du SHIELD
 
 Mon 1er Projet avec React !
+( apprentissage et prise en main du framework )
 
 Installation
 1. Créer un dossier vide sur votre machine pour accueillir le projet

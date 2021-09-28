@@ -297,6 +297,12 @@ label{
     width: 10rem;
     height: 10rem;
     object-fit: cover;
+    border-radius: 7px;
+    box-shadow: 5px 5px 4px rgb(26, 23, 23);
+}
+
+.file-img:hover{
+    transform: perspective(300px) rotateX(45deg);
 }
 
 .file-ul{
@@ -326,5 +332,23 @@ label{
     
 }
 
+.btn-top{
+    border-radius: 5px;
+    margin-top: 2rem;
+    color:#61dafb;
+    background-color: #282c34;
+    width: 7rem;
+    height: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+}
+
+.btn-top:hover{
+    cursor: pointer;
+    color:#282c34;
+    background-color: #61dafb;
+    font-weight: bold;
+    transform: scale(1.13);
+}
 
 
