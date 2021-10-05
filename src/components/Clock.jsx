@@ -2,7 +2,7 @@
 //==================================================
 
 import React, { Component } from 'react';
-import '../style/clock.css'
+
 
 export class Clock extends Component {
     

@@ -3,11 +3,11 @@ import logo from '../Images/logo2.png';
 import Navigation from "../components/Navigation";
 import axios from 'axios';
 import { useForm } from "react-hook-form";
-import "../style/wanted.css";
 import { AiFillFolderOpen } from "react-icons/ai";
 import { Clock } from '../components/Clock';
 import { HashLink as Link } from 'react-router-hash-link';
 import { HashLink } from 'react-router-hash-link';
+import Typing from '../components/Typing';
 
 const Wanted = () => {
 
@@ -236,14 +236,16 @@ const Wanted = () => {
             <h1>Les dossiers secrets du S.H.I.E.L.D</h1>
             <img src={logo} className="App-logo" alt="logo" />
             <Navigation />
-
+            <div className="eyes"></div>
+            <Typing />
+          
             <div className="clock-title">
               <h2>Dossier consulté le </h2><Clock />
             </div>
             <div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="form">
-                        <label htmlFor="rechercher">Entrez le nom du personnage recherché ou juste une lettre ...</label>
+                        <label htmlFor="rechercher">Entrez un nom ou juste une lettre ...</label>
                         <input type="text" id="rechercher" name="rechercher" placeholder="nom ..." {...register("nom", { required: true })}/>
                     </div>
                     <div>

@@ -1,3 +1,4 @@
+
 #affichage {
     width: 100%;
     display: flex;
@@ -21,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     background-color: white;
+    font-family: 'BlackOpsOne-Regular';
 }
 
 .police-logo {
@@ -255,7 +257,7 @@ label{
 }
 
 .missed{
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,7 +265,7 @@ label{
     height: 300px;
     background-image: url("../Images/missed.png");
     background-repeat: no-repeat;
-    background-position:bottom;
+    background-position:top;
     position: relative;
     margin-bottom: 2rem;
 }
@@ -329,7 +331,8 @@ label{
 
 .clock-title{
     display: flex;
-    
+    font-family:'Courier New', Courier, monospace;
+    color:whitesmoke;
 }
 
 .btn-top{
@@ -351,4 +354,23 @@ label{
     transform: scale(1.13);
 }
 
+.eyes {
+    width: 30rem;
+    height: 20rem;
+    background-image: url("../Images/logoeyes.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    margin-bottom: -8rem;
+    opacity: 0.1;
+    animation: eyesonly 3000ms ease-in-out alternate infinite;
+}
 
+@keyframes eyesonly {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 0.6;
+    }
+}

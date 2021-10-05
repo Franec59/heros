@@ -1,0 +1,21 @@
+
+.typing{
+    display: flex;
+    font-family:'Courier New', Courier, monospace;
+
+    & .habi{
+    color:whitesmoke;
+    // text-decoration: underline;
+    
+    }
+
+    & .typewriter{
+        margin-left: 0.5rem;
+        color:#61dafb;
+    }
+    & .acces{
+        color:rgb(18, 235, 112);
+    }
+    
+}
+

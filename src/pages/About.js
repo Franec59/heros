@@ -11,7 +11,16 @@ const About = () => {
             <img src={logo} className="App-logo" alt="logo" />
             <Navigation />
 
-      </header>
+        </header>
+
+        <p className="react">
+        Ce site a été réalisé avec <em>"React"</em>, une bibliothèque JavaScript et fait appel à une API public dédié aux super-heros :
+        <a href="https://superheroapi.com/" className="api">
+              superheroapi.com
+            </a>
+        
+        </p>
+
     </div>
     );
 };
