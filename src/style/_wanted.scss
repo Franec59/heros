@@ -13,6 +13,9 @@
             bottom: 2rem;
             margin-right: 3rem;
         }
+        @media all and (min-width: 736px)and (max-width: 1024px){
+            width: 120%;
+        }
 }
 
 .affiche {
@@ -45,17 +48,14 @@
     @media (max-width: 599px) {
         order:1;
         width: 100%;
-        height: 8.7rem;
         background-image: url("../Images/shield.jpg");
+        background-size: cover;
 
     }
     
 }
 
 .police-dept {
-    display: flex;
-    flex-direction: column;
-    position: relative;
     width: 35rem;
     height: 10rem;
     border: 2px solid black;
@@ -72,21 +72,29 @@
 .police-dept-title{
     text-decoration: underline;
     font-size: 3rem;
-    @media (max-width: 599px) {
+    @media all and (min-width: 331px) and (max-width: 1235px) {
         font-size: 2rem;
         
     }
+    @media all and (min-width: 290px)and (max-width: 330px){
+        font-size: 1.5rem;
+    }
+
+
+
 }
 
 .police-dept-case{
-    position: absolute;
     font-size: 2rem;
-    top:5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    @media (max-width: 599px) {
+    position: relative;
+    bottom: 2.5rem;
+    @media all and (min-width: 331px) and (max-width: 1235px) {
         font-size: 1.2rem;
-        top:4rem;
+        bottom: 0.5rem;
+    }
+    @media all and (min-width: 290px)and (max-width: 330px){
+        font-size: 1rem;
+        bottom: -1rem;
     }
 }
 
@@ -184,10 +192,12 @@
     color:whitesmoke;
     font-size: 1.8rem;
     margin-top:0.5rem;
+    height: auto;
     @media (max-width: 599px) {
         width: 100%;
-        height: auto;
-        
+    }
+    @media all and (min-width: 768px)and (max-width: 1024px){
+        width: 100%;
     }
 }
 
@@ -267,18 +277,18 @@ td {
 }
 
 .FolderOpen{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 .aiFill{
-    position: absolute;
-    bottom: -1.3rem;
-    left:9rem;
     font-size: 2rem;
+    vertical-align: middle;
     color:rgb(29, 112, 29);
-    @media (max-width: 599px) {
-        left: 3rem;
-    }
+    margin-right: 0.5rem;
 }
 
 .form{
@@ -344,6 +354,9 @@ label{
 
 .no-file{
     margin-top: 2rem;
+    @media all and (min-width: 290px)and (max-width: 640px){
+        margin-left: 2rem;
+    }
 }
 
 .no-file-title{
@@ -352,7 +365,6 @@ label{
 
 .yes-file{
     color:#61dafb;
-    // margin-left: 2.2rem;
 }
 
 .file-img{

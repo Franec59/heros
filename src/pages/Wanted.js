@@ -74,10 +74,10 @@ const Wanted = () => {
                   <div className="aff-header">
                     <div className="police-logo" id="123"></div>
                     <div className="police-dept">
-                      <h2 className="police-dept-title">Police Departement</h2>
-                      <h2 className="police-dept-case">
+                      <p className="police-dept-title">Police Departement</p>
+                      <p className="police-dept-case">
                         File N° {dossier.id}{" "}
-                      </h2>
+                      </p>
                     </div>
                     <div className="police-case"></div>
                   </div>
@@ -106,10 +106,10 @@ const Wanted = () => {
                       </div>
                       <div className="skills-array">
                         <div className="FolderOpen">
-                          <p className="aiFill">
+                          <span className="aiFill">
                             <AiFillFolderOpen />
-                          </p>
-                          <h2>Informations</h2>
+                          </span>
+                          Informations
                         </div>
                         <table>
                         <tbody>
