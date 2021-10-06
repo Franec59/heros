@@ -5,16 +5,27 @@
 
     & .habi{
     color:whitesmoke;
-    // text-decoration: underline;
     
     }
 
     & .typewriter{
         margin-left: 0.5rem;
         color:#61dafb;
+        @media (max-width: 599px) {
+            margin-left: none;
+            position: relative;
+            bottom: 1.7rem;
+            
+        }
     }
     & .acces{
         color:rgb(18, 235, 112);
+    }
+
+    @media (max-width: 599px) {
+        margin-top: 2rem;
+        flex-direction: column;
+        font-size: 0.8rem;
     }
     
 }

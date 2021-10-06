@@ -199,7 +199,8 @@ const Wanted = () => {
                             <li className="file-li" key={el.id}><div className="file">
                               <Link to={`/wanted#${el.id}`}>
                               <img src={el.image.url} className="file-img"/></Link>
-                              </div>{el.name}
+                              </div>
+                              {el.name}
                               </li>
                         ))}
                     </ul>
@@ -242,7 +243,7 @@ const Wanted = () => {
             <div className="clock-title">
               <h2>Dossier consulté le </h2><Clock />
             </div>
-            <div>
+            <div className="recherche">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="form">
                         <label htmlFor="rechercher">Entrez un nom ou juste une lettre ...</label>

@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../Images/logo2.png';
 import Navigation from "../components/Navigation";
+import { AiOutlineWarning } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
 
 const About = () => {
     return (
@@ -13,14 +15,29 @@ const About = () => {
 
         </header>
 
-        <p className="react">
-        Ce site a été réalisé avec <em>"React"</em>, une bibliothèque JavaScript et fait appel à une API public dédié aux super-heros :
-        <a href="https://superheroapi.com/" className="api">
+        <div className="about">
+          <p className="react">
+            Ce site a été réalisé avec <em>"React"</em>, une bibliothèque JavaScript et fait appel à une API public dédié aux super-heros :
+            <a href="https://superheroapi.com/" className="api">
               superheroapi.com
             </a>
+            </p>
+            
+            <p className="react">
+                <span className="becarefull"><AiOutlineWarning /></span>
+                L'API "superhero" contient parfois des données manquantes ou l'url de certaines images n'exitent plus.
+                Vous risquez donc, le cas échéant, de constater des vides ou des images manquantes dans les dossiers de recherche !
+            </p>
+            <p className="react">
+                Pour me contacter :
+                <br />
+                <span className="linkedin"><AiFillLinkedin /></span>
+                <a href="https://www.linkedin.com/in/francois-lion/" className="api">
+                linkedin/francois-lion
+                </a>
+            </p>
+        </div>
         
-        </p>
-
     </div>
     );
 };

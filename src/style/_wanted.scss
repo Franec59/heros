@@ -7,6 +7,12 @@
     justify-content: start;
     background-color: #282c34;
     text-align: center;
+
+        @media (max-width: 599px) {
+            position: relative;
+            bottom: 2rem;
+            margin-right: 3rem;
+        }
 }
 
 .affiche {
@@ -16,13 +22,16 @@
     border: 1px solid black;
     background-color: rgb(247,247,247);
     margin-bottom: 2.5rem;
+    
 }
 
 .aff-header {
     display: flex;
     justify-content: space-between;
     background-color: white;
-    font-family: 'BlackOpsOne-Regular';
+    @media (max-width: 599px) {
+        flex-direction: column;
+    }
 }
 
 .police-logo {
@@ -33,6 +42,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    @media (max-width: 599px) {
+        order:1;
+        width: 100%;
+        height: 8.7rem;
+        background-image: url("../Images/shield.jpg");
+
+    }
     
 }
 
@@ -45,11 +61,21 @@
     border: 2px solid black;
     background-color: rgb(247,247,247);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    @media (max-width: 599px) {
+        order:3;
+        width: 100%;
+        height: 8rem;
+
+    }
 }
 
 .police-dept-title{
     text-decoration: underline;
     font-size: 3rem;
+    @media (max-width: 599px) {
+        font-size: 2rem;
+        
+    }
 }
 
 .police-dept-case{
@@ -58,6 +84,10 @@
     top:5rem;
     left: 50%;
     transform: translateX(-50%);
+    @media (max-width: 599px) {
+        font-size: 1.2rem;
+        top:4rem;
+    }
 }
 
 .police-case {
@@ -69,6 +99,12 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    @media (max-width: 599px) {
+        order:2;
+        width: 100%;
+        height: 8rem;
+        background-image: url("../Images/classified.jpg");
+    }
 }
 
 .black-header{
@@ -78,38 +114,49 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 4rem;
     margin-top:0.5rem;
+    @media (max-width: 599px) {
+        font-size: 2rem;
+        height: 3rem;
+    }
 }
 
 .hero-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(224, 210, 210);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.5rem;
     border: 1px solid black;
-    background-color: rgb(235, 228, 218);
     margin: 0.7rem;
     height: 5rem;
-    position: relative;
+
 }
 
 .hero-name h1{
-    position: absolute;
-    bottom: -1.3rem;
-    left: 50%;
-    transform: translateX(-50%);
-    
+    @media (max-width: 599px) {
+        font-size: 1.5rem;
+    } 
 }
 
 .first-block{
     display:flex;
     justify-content: space-around;
     background-color: rgb(247,247,247);
+    @media (max-width: 599px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .hero-img{
     width: 45%;
     height: 39rem;
-    /* border: 3px groove black; */
     background-color: rgb(247,247,247);
+    @media (max-width: 599px) {
+        width: 95%;
+        height: 26rem;
+    }
     
 }
 
@@ -125,6 +172,10 @@
     width: 50%;
     min-height: 40rem;
     background-color: rgb(247,247,247);
+    @media (max-width: 599px) {
+        width: 95%;
+        
+    }
 }
 
 .black-footer{
@@ -133,12 +184,14 @@
     color:whitesmoke;
     font-size: 1.8rem;
     margin-top:0.5rem;
+    @media (max-width: 599px) {
+        width: 100%;
+        height: auto;
+        
+    }
 }
 
 table {
-    /* border-width:1px; 
-    border-style:solid; 
-    border-color:white; */
     width:100%;
     border-collapse: collapse;
 
@@ -223,6 +276,9 @@ td {
     left:9rem;
     font-size: 2rem;
     color:rgb(29, 112, 29);
+    @media (max-width: 599px) {
+        left: 3rem;
+    }
 }
 
 .form{
@@ -280,6 +336,9 @@ label{
 
 .file-aff{
     margin-top: 2rem;
+    @media (max-width: 599px) {
+        margin-left: 1.5rem;
+    }
     
 }
 
@@ -293,6 +352,7 @@ label{
 
 .yes-file{
     color:#61dafb;
+    // margin-left: 2.2rem;
 }
 
 .file-img{
@@ -301,6 +361,10 @@ label{
     object-fit: cover;
     border-radius: 7px;
     box-shadow: 5px 5px 4px rgb(26, 23, 23);
+        @media (max-width: 599px) {
+            width: 5rem;
+            height: 5rem;
+        }
 }
 
 .file-img:hover{
@@ -318,6 +382,11 @@ label{
     padding:0.5rem;
     color:#61dafb;
     font-size: 1.5rem;
+    width: 10rem;
+    @media (max-width: 599px) {
+        font-size: 1rem;
+        width: 5rem;
+    }
 }
 
 .dossier-ul{
@@ -327,12 +396,23 @@ label{
 
 .dossier-aff{
     width: 70%;
+    @media (max-width: 599px) {
+        width: 95%;
+        
+    }
 }
 
 .clock-title{
     display: flex;
     font-family:'Courier New', Courier, monospace;
     color:whitesmoke;
+        @media (max-width: 599px) {
+            flex-direction: column;
+            font-size: 0.8rem;
+            position: relative;
+            bottom: 2rem;
+        }
+
 }
 
 .btn-top{
@@ -364,6 +444,12 @@ label{
     margin-bottom: -8rem;
     opacity: 0.1;
     animation: eyesonly 3000ms ease-in-out alternate infinite;
+
+        @media (max-width: 599px) {
+            width: 20rem;
+            height: 12rem;
+        }
+
 }
 
 @keyframes eyesonly {
@@ -372,5 +458,12 @@ label{
     }
     to {
         opacity: 0.6;
+    }
+}
+
+.recherche{
+    @media (max-width: 599px) {
+        position: relative;
+        bottom: 2rem;
     }
 }

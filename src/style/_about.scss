@@ -1,8 +1,17 @@
+.about{
+  text-align: left;
+  margin: 2rem;
+    @media (max-width: 599px) {
+      margin: none;
+  }
+}
+
+
 .react{
     color:whitesmoke;
     font-size: 1.5rem;
     margin-top: 2rem;
-
+    
     @media (max-width: 599px) {
         text-align: justify;
         margin-left: 1rem;
@@ -22,3 +31,19 @@
         text-decoration: underline;
       }
     }
+
+.becarefull{
+  margin-right: 0.5rem;
+  color: tomato;
+  font-size: 2rem;
+  vertical-align: middle;
+  
+  
+}
+
+.linkedin{
+  margin-right: 0.3rem;
+  color: #61dafb;
+  font-size: 2rem;
+  vertical-align: middle;
+}
