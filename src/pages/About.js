@@ -17,7 +17,7 @@ const About = () => {
 
         <div className="about">
           <p className="react">
-            Ce site a été réalisé avec <em>"React"</em>, une bibliothèque JavaScript et fait appel à une API public dédié aux super-heros :
+            Ce site a été réalisé avec <em>"React"</em>, une bibliothèque JavaScript et fait appel à une API publique dédiée aux super-heros :
             <a href="https://superheroapi.com/" className="api">
               superheroapi.com
             </a>
@@ -25,7 +25,7 @@ const About = () => {
             
             <p className="react">
                 <span className="becarefull"><AiOutlineWarning /></span>
-                L'API "superhero" contient parfois des données manquantes ou l'url de certaines images n'exitent plus.
+                L'API "superhero" contient parfois des données manquantes ou l'url de certaines images n'existent plus.
                 Vous risquez donc, le cas échéant, de constater des vides ou des images manquantes dans les dossiers de recherche !
             </p>
             <p className="react">

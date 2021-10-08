@@ -26,7 +26,7 @@ const Home = () => {
             apparaît pour la première fois dans le comic book Strange Tales #135
             en août 1965.
             <br />
-            Dirigé par Nick Fury (personnage créé en 1963), un vétéran de la
+            Dirigée par Nick Fury (personnage créé en 1963), un vétéran de la
             Seconde Guerre mondiale et super-espion borgne, celui-ci en est le
             directeur historique ... 
           </p>
@@ -38,7 +38,7 @@ const Home = () => {
           <h2>Fonctionnement du site</h2>
           <p className="shield-def">
             Ce site utilise le SHIELD comme prétexte pour faire appel à une
-            API de super-héro et autres personnages de fiction.
+            API de super-héros et autres personnages de fiction.
             <br />
             L'idée étant de faire comme si le Shield avait des dossiers
             sur tous ces héros, bons ou méchants, venant de chez Marvel, DC
@@ -51,15 +51,15 @@ const Home = () => {
           </p>
 
           <p className="shield-def">
-            Cette API public est uniquement en anglais et il vous faudra entrer
-            les noms des personnages que vous rechercher en VO.
+            Cette API publique est uniquement en anglais et il vous faudra entrer
+            les noms des personnages que vous recherchez en VO.
             <br />
             Exemples : <em>Captain America</em> et non "Capitaine America",{" "}
             <em>Spider-man</em> et non "Spiderman", <em>Darth Vader</em> et non
             "Dark Vador" !
             <br />
             <br />
-            Outre les "super-heros", vous y trouver d'autres "héros" tel que "James
+            Outre les "super-heros", vous y trouverez d'autres "héros" tel que "James
             Bond", "Indiana Jones" ou même "Chuck Norris" !!
             <br />
             <br />
