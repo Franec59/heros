@@ -47,7 +47,7 @@ const Home = () => {
 
           <p className="shield-def">
             Vous pouvez donc consulter leur dossier nominatif sur la page 
-             <em>"Rechercher"</em>.
+             <em>"Accès aux dossiers"</em>.
           </p>
 
           <p className="shield-def">
@@ -63,7 +63,7 @@ const Home = () => {
             Bond", "Indiana Jones" ou même "Chuck Norris" !!
             <br />
             <br />
-            Sur la page <em>Rechercher</em>, vous pouvez juste saisir "captain" ou
+            Sur la page <em>Accès aux dossiers</em>, vous pouvez juste saisir "captain" ou
             "green" par exemple ou simplement une lettre et voir le résultat !
           </p>
           <p className="shield-def">

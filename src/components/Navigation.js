@@ -8,7 +8,7 @@ const Navigation = () => {
                 Accueil
             </NavLink>
             <NavLink exact to="wanted" activeClassName="nav-active">
-                Accés aux dossiers
+                Accès aux dossiers
             </NavLink>
             <NavLink exact to="a-propos" activeClassName="nav-active">
                 A propos
